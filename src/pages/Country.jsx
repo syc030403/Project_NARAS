@@ -7,6 +7,7 @@ export default function Country(){
     const params = useParams();
     const [country, setCountry] = useState();
 
+    // @ts-ignore
     const setInitData = async()=>{
         const data = await fetchCountry(params.code);
         setCountry(data);
